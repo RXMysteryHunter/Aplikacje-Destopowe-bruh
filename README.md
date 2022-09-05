@@ -1,1 +1,0 @@
-# Aplikacje-Destopowe-bruh
