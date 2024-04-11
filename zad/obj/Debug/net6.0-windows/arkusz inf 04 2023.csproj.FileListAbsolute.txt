@@ -1,0 +1,43 @@
+C:\klasa3C\arksuz inf 04\arkusz inf 04 2023\bin\Debug\net6.0-windows\arkusz inf 04 2023.exe
+C:\klasa3C\arksuz inf 04\arkusz inf 04 2023\bin\Debug\net6.0-windows\arkusz inf 04 2023.deps.json
+C:\klasa3C\arksuz inf 04\arkusz inf 04 2023\bin\Debug\net6.0-windows\arkusz inf 04 2023.runtimeconfig.json
+C:\klasa3C\arksuz inf 04\arkusz inf 04 2023\bin\Debug\net6.0-windows\arkusz inf 04 2023.dll
+C:\klasa3C\arksuz inf 04\arkusz inf 04 2023\bin\Debug\net6.0-windows\arkusz inf 04 2023.pdb
+C:\klasa3C\arksuz inf 04\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz_inf_04_2023.Form1.resources
+C:\klasa3C\arksuz inf 04\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz inf 04 2023.csproj.GenerateResource.cache
+C:\klasa3C\arksuz inf 04\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz inf 04 2023.GeneratedMSBuildEditorConfig.editorconfig
+C:\klasa3C\arksuz inf 04\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz inf 04 2023.AssemblyInfoInputs.cache
+C:\klasa3C\arksuz inf 04\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz inf 04 2023.AssemblyInfo.cs
+C:\klasa3C\arksuz inf 04\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz inf 04 2023.csproj.CoreCompileInputs.cache
+C:\klasa3C\arksuz inf 04\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz inf 04 2023.dll
+C:\klasa3C\arksuz inf 04\arkusz inf 04 2023\obj\Debug\net6.0-windows\refint\arkusz inf 04 2023.dll
+C:\klasa3C\arksuz inf 04\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz inf 04 2023.pdb
+C:\klasa3C\arksuz inf 04\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz inf 04 2023.genruntimeconfig.cache
+C:\klasa3C\arksuz inf 04\arkusz inf 04 2023\obj\Debug\net6.0-windows\ref\arkusz inf 04 2023.dll
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\bin\Debug\net6.0-windows\arkusz inf 04 2023.exe
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\bin\Debug\net6.0-windows\arkusz inf 04 2023.deps.json
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\bin\Debug\net6.0-windows\arkusz inf 04 2023.runtimeconfig.json
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\bin\Debug\net6.0-windows\arkusz inf 04 2023.dll
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\bin\Debug\net6.0-windows\arkusz inf 04 2023.pdb
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz_inf_04_2023.Form1.resources
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz inf 04 2023.csproj.GenerateResource.cache
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz inf 04 2023.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz inf 04 2023.AssemblyInfoInputs.cache
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz inf 04 2023.AssemblyInfo.cs
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz inf 04 2023.csproj.CoreCompileInputs.cache
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz inf 04 2023.dll
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\obj\Debug\net6.0-windows\refint\arkusz inf 04 2023.dll
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz inf 04 2023.pdb
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\obj\Debug\net6.0-windows\arkusz inf 04 2023.genruntimeconfig.cache
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\obj\Debug\net6.0-windows\ref\arkusz inf 04 2023.dll
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\obj\Debug\net6.0-windows\Form1.resources
+C:\Users\Uczeń - sala 213\Downloads\arkusz inf 04 2023\obj\Debug\net6.0-windows\employes.Form1.resources
+C:\Maks F\zad\obj\Debug\net6.0-windows\employes.Form1.resources
+C:\Maks F\zad\obj\Debug\net6.0-windows\arkusz inf 04 2023.csproj.GenerateResource.cache
+C:\Maks F\zad\obj\Debug\net6.0-windows\arkusz inf 04 2023.GeneratedMSBuildEditorConfig.editorconfig
+C:\Maks F\zad\obj\Debug\net6.0-windows\arkusz inf 04 2023.AssemblyInfoInputs.cache
+C:\Maks F\zad\obj\Debug\net6.0-windows\arkusz inf 04 2023.AssemblyInfo.cs
+C:\Maks F\zad\obj\Debug\net6.0-windows\arkusz inf 04 2023.csproj.CoreCompileInputs.cache
+C:\Maks F\zad\obj\Debug\net6.0-windows\arkusz inf 04 2023.dll
+C:\Maks F\zad\obj\Debug\net6.0-windows\refint\arkusz inf 04 2023.dll
+C:\Maks F\zad\obj\Debug\net6.0-windows\arkusz inf 04 2023.pdb
