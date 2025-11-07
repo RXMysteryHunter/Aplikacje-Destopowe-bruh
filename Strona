@@ -1,0 +1,169 @@
+import React, { useEffect, useMemo, useState } from "react";
+
+const CATEGORIES = [
+  { key: "all", label: "Wszystkie" },
+  { key: "kwiaty", label: "Kwiaty" },
+  { key: "zwierzeta", label: "Zwierzęta" },
+  { key: "samochody", label: "Samochody" },
+];
+
+const PHOTOS = [
+  {
+    id: "f1",
+    title: "Maki",
+    category: "kwiaty",
+    src: "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=1c84d3be2f3b8a3d9c8d3b2b6c6b0f3b",
+  },
+  {
+    id: "f2",
+    title: "Hiacynt",
+    category: "kwiaty",
+    src: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=7fdbff6f6f0c6b2c6ca8d3f2c4b6e123",
+  },
+  {
+    id: "f3",
+    title: "Róża",
+    category: "kwiaty",
+    src: "https://images.unsplash.com/photo-1501973801540-537f08ccae7b?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=2c9c9a1b6d8a9f1b6c4c2f9e8a7b6c5d",
+  },
+  {
+    id: "c1",
+    title: "Nowoczesne auto",
+    category: "samochody",
+    src: "https://images.unsplash.com/photo-1542365887-40d1f8a4b6b6?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=e9d5f8a1b2c3d4e5f6a7b8c9d0e1f2a3",
+  },
+  {
+    id: "c2",
+    title: "Garbus",
+    category: "samochody",
+    src: "https://images.unsplash.com/photo-1511396269175-3a3c1a6d6f0a?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=3a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d",
+  },
+  {
+    id: "z1",
+    title: "Pies",
+    category: "zwierzeta",
+    src: "https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=1f2e3d4c5b6a7a8b9c0d1e2f3a4b5c6d",
+  },
+  {
+    id: "z2",
+    title: "Kot",
+    category: "zwierzeta",
+    src: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d",
+  },
+];
+
+const LS_KEY = "gallery_downloads_v1";
+
+export default function GalleryApp() {
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [downloadCount, setDownloadCount] = useState(() => {
+    try {
+      const stored = localStorage.getItem(LS_KEY);
+      return stored ? JSON.parse(stored) : {};
+    } catch {
+      return {};
+    }
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(LS_KEY, JSON.stringify(downloadCount));
+    } catch {}
+  }, [downloadCount]);
+
+  const visiblePhotos = useMemo(() => {
+    if (selectedCategory === "all") return PHOTOS;
+    return PHOTOS.filter((photo) => photo.category === selectedCategory);
+  }, [selectedCategory]);
+
+  const onDownload = (photo) => {
+    setDownloadCount((prev) => ({
+      ...prev,
+      [photo.id]: (prev[photo.id] || 0) + 1,
+    }));
+
+    const link = document.createElement("a");
+    link.href = photo.src + "&dl=1";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.click();
+  };
+
+  const CategoryButton = ({ cat }) => (
+    <button
+      key={cat.key}
+      onClick={() => setSelectedCategory(cat.key)}
+      className={`px-3 py-1 rounded-full border transition ${
+        selectedCategory === cat.key
+          ? "bg-green-600 text-white border-green-700"
+          : "bg-white text-gray-700 hover:bg-gray-100"
+      }`}
+    >
+      {cat.label}
+    </button>
+  );
+
+  return (
+    <main className="min-h-screen bg-gray-50 p-6">
+      <div className="max-w-5xl mx-auto">
+        <header className="mb-6">
+          <h1 className="text-3xl font-extrabold mb-2">Galeria zdjęć</h1>
+          <p className="text-sm text-gray-600">
+            Wybierz kategorię, aby przefiltrować zdjęcia. Kliknij „Pobierz”, aby
+            zwiększyć licznik.
+          </p>
+        </header>
+
+        <div className="flex flex-wrap gap-2 mb-5">
+          {CATEGORIES.map((cat) => (
+            <CategoryButton key={cat.key} cat={cat} />
+          ))}
+        </div>
+
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {visiblePhotos.map((photo) => (
+            <article
+              key={photo.id}
+              className="bg-white rounded-lg shadow-sm overflow-hidden"
+            >
+              <div style={{ aspectRatio: "16/11" }}>
+                <img
+                  src={photo.src}
+                  alt={photo.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-3">
+                <h3 className="font-semibold text-lg">{photo.title}</h3>
+                <p className="text-xs text-gray-500 mb-2">
+                  Pobrania: <strong>{downloadCount[photo.id] || 0}</strong>
+                </p>
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => onDownload(photo)}
+                    className="px-3 py-1 bg-green-600 text-white rounded hover:opacity-90"
+                  >
+                    Pobierz
+                  </button>
+                  <button
+                    onClick={() => navigator.clipboard?.writeText(photo.src)}
+                    className="px-3 py-1 border rounded text-sm"
+                  >
+                    Kopiuj link
+                  </button>
+                </div>
+              </div>
+            </article>
+          ))}
+        </section>
+
+        <footer className="mt-8 text-sm text-gray-600">
+          <p>
+            Liczniki pobrań zapisywane są lokalnie w{" "}
+            <code>localStorage</code>, dzięki czemu nie znikną po odświeżeniu.
+          </p>
+        </footer>
+      </div>
+    </main>
+  );
+}
